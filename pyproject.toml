@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whispersteg-video"
+version = "1.0.0"
+description = "Audio steganography in video with dual-layer AES-256-GCM"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "PyQt6>=6.6",
+  "PyCryptodome>=3.19",
+  "opencv-python>=4.8",
+  "PyWavelets>=1.5",
+  "numpy>=1.24",
+  "reedsolo>=1.7.0",
+]
+
+[project.gui-scripts]
+whispersteg = "app:main"
+
+[tool.setuptools]
+packages = ["whispersteg"]
+py-modules = ["app"]

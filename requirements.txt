@@ -1,0 +1,12 @@
+# Python 3.10+ / Windows
+PyQt6>=6.6
+PyCryptodome>=3.19
+opencv-python>=4.8
+ffmpeg-python>=0.2.0
+PyWavelets>=1.5
+numpy>=1.24
+reedsolo>=1.7.0
+
+
+# Optional: only needed if you want ffmpeg bundled by an installer.
+# imageio-ffmpeg>=0.4.9
